@@ -7,7 +7,7 @@ with open( 'comics.json' ) as f:
 	comics = json.load( f )
 	
 modified = False
-chrome_app_path='c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
+chrome_app_path='/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe'
 while True :
 	print 'check'
 
@@ -33,7 +33,7 @@ while True :
 
 	if modified == True :
 		with open( 'comics.json', 'w' ) as f:
-			json.dump( comics, f )
+			f.write( json.dumps( comics, indent = 4 ) )
 		modified = False
 	print 'sleep'
 	time.sleep( 10 )
