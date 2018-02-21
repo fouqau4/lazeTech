@@ -18,22 +18,23 @@ while True :
 
 		response = requests.get( request )
 
-		pattern = str( comic['comic_id'] ) + '-' + str( comic['newest'] + 1 ) + '.html'
-		pos = response.content.find( pattern )
+		while( True ) :
+			pattern = str( comic['comic_id'] ) + '-' + str( comic['newest'] + 1 ) + '.html'
+			pos = response.content.find( pattern )
 
-		if pos == -1 :
-			pass
+			if pos == -1 :
+				break
 #			print comic['name'].encode('utf8') + ' is not updated.'
-		else :
-			comic['newest'] = comic['newest'] + 1
-			print '[updated]' + comic['name'].encode('utf8') + '[' + str( comic['newest'] ) + '] is now available.'
-			modified = True
-			open_url='http://v.comicbus.com/online/comic-'+ str( comic['comic_id'] ) + '.html?ch=' + str( comic['newest'] ) + ''
-			webbrowser.Chrome( chrome_app_path ).open_new_tab( open_url )
+			else :
+				comic['newest'] = comic['newest'] + 1
+				print '[updated]' + comic['name'].encode('utf8') + '[' + str( comic['newest'] ) + '] is now available.'
+				modified = True
+				open_url='http://v.comicbus.com/online/comic-'+ str( comic['comic_id'] ) + '.html?ch=' + str( comic['newest'] ) + ''
+				webbrowser.Chrome( chrome_app_path ).open_new_tab( open_url )
 
 	if modified == True :
 		with open( 'comics.json', 'w' ) as f:
 			f.write( json.dumps( comics, indent = 4 ) )
 		modified = False
-	print 'sleep'
-	time.sleep( 10 )
+	print 'END'
+	break
