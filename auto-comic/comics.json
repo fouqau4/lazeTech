@@ -1,27 +1,27 @@
 [
     {
         "comic_id": 13505, 
-        "newest": 135, 
+        "newest": 160, 
         "name": "\u897f\u904a"
     }, 
     {
         "comic_id": 9418, 
-        "newest": 254, 
+        "newest": 277, 
         "name": "\u4e03\u539f\u7f6a"
     }, 
     {
         "comic_id": 10284, 
-        "newest": 202, 
+        "newest": 228, 
         "name": "\u7a7a\u4e2d\u6bba\u4eba\u9b3c"
     }, 
     {
         "comic_id": 103, 
-        "newest": 895, 
+        "newest": 913, 
         "name": "\u6d77\u8cca\u738b"
     }, 
     {
         "comic_id": 11753, 
-        "newest": 160, 
+        "newest": 179, 
         "name": "\u6771\u4eac\u98df\u5c4d\u9b3cRE"
     }, 
     {
@@ -31,12 +31,12 @@
     }, 
     {
         "comic_id": 14644, 
-        "newest": 58, 
+        "newest": 66, 
         "name": "\u901a\u5fc3\u7c89\u958b\u95dc"
     }, 
     {
         "comic_id": 1551, 
-        "newest": 671, 
+        "newest": 693, 
         "name": "\u9280\u9b42"
     }, 
     {
@@ -46,42 +46,47 @@
     }, 
     {
         "comic_id": 3709, 
-        "newest": 158, 
+        "newest": 161, 
         "name": "\u9b54\u57df\u82f1\u96c4\u50b3\u8aaa"
     }, 
     {
         "comic_id": 9888, 
-        "newest": 65, 
+        "newest": 72, 
         "name": "\u8acb\u50be\u807d\u6b7b\u8005\u7684\u8072\u97f3"
     }, 
     {
         "comic_id": 15525, 
-        "newest": 7, 
+        "newest": 20, 
         "name": "\u4e2d\u83ef\u4e00\u756a \u6975"
     }, 
     {
         "comic_id": 11871, 
-        "newest": 44, 
+        "newest": 46, 
         "name": "\u4f86\u81ea\u6df1\u6df5"
     }, 
     {
         "comic_id": 15593, 
-        "newest": 5, 
+        "newest": 18, 
         "name": "POP TEAM EPIC"
     }, 
     {
         "comic_id": 12537, 
-        "newest": 148, 
+        "newest": 169, 
         "name": "\u9ec3\u91d1\u795e\u5a01"
-    },
+    }, 
     {
         "comic_id": 105, 
-        "newest": 374, 
-        "name": "獵人"
-    },
+        "newest": 380, 
+        "name": "\u7375\u4eba"
+    }, 
     {
         "comic_id": 7216, 
-        "newest": 150, 
-        "name": "召喚惡魔"
+        "newest": 156, 
+        "name": "\u53ec\u559a\u60e1\u9b54"
+    }, 
+    {
+        "comic_id": 10818, 
+        "newest": 55, 
+        "name": "\u72c2\u8ced\u4e4b\u6df5"
     }
 ]

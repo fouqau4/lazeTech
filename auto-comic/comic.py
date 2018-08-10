@@ -1,3 +1,5 @@
+#!/usr/bin/python -tt
+
 import json
 import requests
 import time
@@ -12,11 +14,11 @@ while True:
     print 'check'
 
     for comic in comics:
-        protocol = 'http://'
+        protocol = 'https://'
         url = 'www.comicbus.com/html/' + str(comic['comic_id']) + '.html'
         request = protocol + url
 
-        response = requests.get(request)
+        response = requests.get(request, verify=False)
 
         while(True):
             pattern = str(comic['comic_id']) + '-' + \
