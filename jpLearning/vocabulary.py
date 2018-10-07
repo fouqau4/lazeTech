@@ -6,10 +6,10 @@ import sys
 from random import shuffle
 
 _dir_vocs = './vocabulary.json'
-_num = int(sys.argv[1]) if len(sys.argv) > 1 else 10
+_num = int(sys.argv[2]) if len(sys.argv) > 2 else 10
 
 with open(_dir_vocs) as f:
-	data = json.load(f)
+	data = json.load(f)[int(sys.argv[1])]
 
 keys = data.keys()
 shuffle(keys)
