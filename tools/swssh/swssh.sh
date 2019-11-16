@@ -1,17 +1,6 @@
 #!/bin/bash
 
-devices=(\
-#"example"\
-)
-user=(\
-#"username"\
-)
-ip=(\
-#"1.2.3.4"\
-)
-port=(\
-#9527\
-)
+source ./tar_list.cfg
 
 ssh_login(){
 	idx=$1
@@ -19,7 +8,7 @@ ssh_login(){
 	ip=${ip[$idx]}
 	port=${port[$idx]}
 
-	tmux new -s ${devices[$idx]} ssh $user@$ip -p $port
+	ssh $user@$ip -p $port
 }
 
 target=$1

@@ -1,0 +1,16 @@
+devices=(\
+ "host 1"\
+ "host 2"\
+)
+user=(\
+ "username_1"\
+ "username_2"\
+)
+ip=(\
+ "1.2.3.4"\
+ "domain.name"\
+)
+port=(\
+ 9527\
+ 22\
+)
